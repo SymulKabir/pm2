@@ -1,0 +1,41 @@
+# To show all online & offline server
+=> pm2 list
+
+# To start server with file path
+=> pm2 start ./filename --name ServerName
+
+# To start with command
+=> pm2 start "npm run dev" --name ServerName
+
+# To start existing single server
+=> pm2 start ServerName/ServerID
+
+# To start existing all server
+=> pm2 start all
+
+# To restart existing single server
+=> pm2 restart ServerName/ServerID
+
+# To restart existing all server
+=> pm2 restart all
+
+# To show all server log
+=> pm2 log
+
+# To show single server log
+=> pm2 log ServerName/ServerID
+
+# To show single server log
+=> pm2 log ServerName/ServerID
+
+# To stop existing single server
+=> pm2 stop ServerName/ServerID
+
+# To stop existing all server
+=> pm2 stop all
+
+# To delete existing single server
+=> pm2 delete ServerName/ServerID
+
+# To delete existing all server
+=> pm2 delete all
