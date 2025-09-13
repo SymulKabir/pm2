@@ -57,3 +57,9 @@
  ```bash
     pm2 delete all 
  ```
+**To auto start all server automaticly on server startup**
+ ```bash
+    pm2 save
+    pm2 startup systemd
+    pm2 save
+ ```
