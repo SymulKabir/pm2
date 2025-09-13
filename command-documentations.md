@@ -63,3 +63,7 @@
     pm2 startup systemd
     pm2 save
  ```
+**Remove init script via**   
+  ```bash
+    pm2 unstartup systemd
+  ```
