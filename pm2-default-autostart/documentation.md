@@ -10,21 +10,15 @@
    ```bash
     pm2 start /var/www/myapp/server.js --name myapp
     pm2 start "npm start" --name reactapp --cwd /var/www/reactapp
-   ```
-
-3. **Start your apps with PM2**   
-   ```bash
-    pm2 start /var/www/myapp/server.js --name myapp
-    pm2 start "npm start" --name reactapp --cwd /var/www/reactapp
     pm2 start "npm run dev" --name api-service
    ```
 
-4. **Save process list**   
+3. **Save process list**   
    ```bash
     pm2 save
    ```
 
-5. **Enable PM2 startup on reboot**   
+4. **Enable PM2 startup on reboot**   
    ```bash
     pm2 startup systemd
    ```
