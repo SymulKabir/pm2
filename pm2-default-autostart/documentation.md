@@ -28,4 +28,13 @@ It will give you a command — run it, then:
    ```bash
     pm2 save
    ```
+6. **Remove init script via**   
+   ```bash
+    pm2 unstartup systemd
+   ```
+7. **Save process list again**   
+   ```bash
+    pm2 save
+   ```
+   
 ✅ Now all apps managed by PM2 will start automatically after reboot.
